@@ -1,0 +1,16 @@
+#############################################################
+#
+# Makefile for Lahey fortran compiler
+#
+# Alexander Soudackov, The Pennsylvania State University
+# December 5, 2003
+#
+#############################################################
+
+ARCH = lahey-x86_64
+FC      = lf95
+MODFLAG = -module
+F90FLAGS = --o2 --tp4 --sse2 --trace --dal
+F77FLAGS = --o2 --tp4 --sse2 --trace --dal
+#FCFLAGS = -g --trace --chkglobal --ndal
+LDFLAGS	=

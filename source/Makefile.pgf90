@@ -1,0 +1,18 @@
+#############################################################
+#
+# Makefile for PGI fortran compiler
+#
+# Alexander Soudackov, The Pennsylvania State University
+# December 5, 2003
+#
+#############################################################
+
+ARCH = pgi-13.9-x86_64
+FC      = pgf90
+# Important: MODFLAG must have a trailing blank
+MODFLAG = -module 
+BACKSLASH = -Mbackslash
+NOBACKSLASH = -Mnobackslash
+F90FLAGS = -fast -Mipa=fast -Mdaz
+F77FLAGS = -O2 -Mdaz
+LDFLAGS = -llapack -lblas -lm

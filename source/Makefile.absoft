@@ -1,0 +1,15 @@
+#############################################################
+#
+# Makefile for ABSOFT fortran compiler
+#
+# Alexander Soudackov, The Pennsylvania State University
+# December 5, 2003
+#
+#############################################################
+
+ARCH = absoft-x86_64
+FC      = /opt/absoft/bin/f90
+MODFLAG = -module
+F90FLAGS = -O3 -cpu:host
+F77FLAGS = -O3 -cpu:host
+LDFLAGS	= -lU77
